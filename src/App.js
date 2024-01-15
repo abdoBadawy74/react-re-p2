@@ -12,9 +12,16 @@ export class App extends Component {
   render() {
     return (
       <div>
-        {/* <Parent></Parent> */}
-        <h2>App Component</h2>
-        <Gallary></Gallary>
+        <div className="container">
+          <div className="row">
+            <div className="col-md-6">
+              <Home></Home>
+            </div>
+            <div className="col-md-6">
+              <Gallary></Gallary>
+            </div>
+          </div>
+        </div>
       </div>
     );
   }
