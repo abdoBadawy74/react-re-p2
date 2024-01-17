@@ -1,9 +1,9 @@
 import React from "react";
 
-export default function Contact() {
+export default function About() {
   return (
     <div>
-      <h1>Contact Component </h1>
+      <h1>About Component </h1>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt
         aspernatur earum porro a nesciunt iusto, officiis ullam voluptas eos qui
