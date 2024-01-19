@@ -1,5 +1,6 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
+import Movie from "./Movie";
 
 export default function Movies() {
   let [trendingMovies, settrendingMovies] = useState([]);
@@ -23,7 +24,7 @@ export default function Movies() {
     <div>
       <div className="container">
         <div className="row">
-          {trendingMovies.map((movie, i) => (
+          {/* {trendingMovies.map((movie, i) => (
             <div key={i} className="col-md-3">
               <img
                 className="w-100"
@@ -33,7 +34,11 @@ export default function Movies() {
               <h5>{movie.title}</h5>
               <p>{movie.overview}</p>
             </div>
-          ))}
+          ))} */}
+
+          {
+            trendingMovies.map((movie,i)=> <Movie key={i} movieInfo={movie}></Movie>)
+          }
         </div>
       </div>
     </div>
