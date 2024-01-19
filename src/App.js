@@ -1,6 +1,6 @@
 import { Component } from "react";
 import { Home } from "./Home";
-import  About  from "./About";
+import About from "./About";
 import Contacts from "./Contacts";
 import Parent from "./Parent";
 import Gallary from "./Gallary";
@@ -8,9 +8,10 @@ import NavBar from "./NavBar";
 import Footer from "./Footer";
 import { Route, Routes } from "react-router-dom";
 import NotFound from "./NotFound";
-import Projects from './Projects';
+import Projects from "./Projects";
 import Web from "./Web";
 import Mobile from "./Mobile";
+import Movies from "./Movies";
 
 export class App extends Component {
   state = {};
@@ -24,6 +25,9 @@ export class App extends Component {
           <Routes>
             <Route path="/" element={<Parent></Parent>}></Route>
             <Route path="home" element={<Home></Home>}></Route>
+
+            <Route path="movies" element={<Movies></Movies>}></Route>
+            
             <Route path="parent" element={<Parent></Parent>}></Route>
             <Route path="contacts" element={<Contacts></Contacts>}></Route>
             <Route path="about" element={<About></About>}></Route>
@@ -33,10 +37,7 @@ export class App extends Component {
             </Route>
             <Route path="gallary" element={<Gallary></Gallary>}></Route>
             <Route path="*" element={<NotFound></NotFound>}></Route>
-
           </Routes>
-
-
         </div>
         <Footer></Footer>
       </div>
