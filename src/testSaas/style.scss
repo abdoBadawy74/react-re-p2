@@ -2,6 +2,8 @@ $mainColor: red;
 
 $darkColor: #999;
 
+$mainWidth:500px;
+
 h2{
     color: $mainColor;
 }
@@ -11,9 +13,9 @@ div{
 }
 
 .parent{
-    margin: 30px;
-    display: flex;
-    justify-content: space-between;
+    // margin: 30px;
+    // display: flex;
+    // justify-content: space-between;
 
     &:hover{
         color: blue;
@@ -29,5 +31,13 @@ div{
             weight:600;
             size:20px
         }
+    }
+}
+
+@for $i from 1 to 10{
+    .child#{$i}{
+        background-color: rgba(1,150,240,$i/10);
+        width: $mainWidth + 50 * $i;
+        margin: auto;
     }
 }

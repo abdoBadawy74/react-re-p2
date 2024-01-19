@@ -6,11 +6,6 @@ div {
   color: #999;
 }
 
-.parent {
-  margin: 30px;
-  display: flex;
-  justify-content: space-between;
-}
 .parent:hover {
   color: blue;
 }
@@ -22,4 +17,58 @@ div {
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-weight: 600;
   font-size: 20px;
+}
+
+.child1 {
+  background-color: rgba(1, 150, 240, 0.1);
+  width: 550px;
+  margin: auto;
+}
+
+.child2 {
+  background-color: rgba(1, 150, 240, 0.2);
+  width: 600px;
+  margin: auto;
+}
+
+.child3 {
+  background-color: rgba(1, 150, 240, 0.3);
+  width: 650px;
+  margin: auto;
+}
+
+.child4 {
+  background-color: rgba(1, 150, 240, 0.4);
+  width: 700px;
+  margin: auto;
+}
+
+.child5 {
+  background-color: rgba(1, 150, 240, 0.5);
+  width: 750px;
+  margin: auto;
+}
+
+.child6 {
+  background-color: rgba(1, 150, 240, 0.6);
+  width: 800px;
+  margin: auto;
+}
+
+.child7 {
+  background-color: rgba(1, 150, 240, 0.7);
+  width: 850px;
+  margin: auto;
+}
+
+.child8 {
+  background-color: rgba(1, 150, 240, 0.8);
+  width: 900px;
+  margin: auto;
+}
+
+.child9 {
+  background-color: rgba(1, 150, 240, 0.9);
+  width: 950px;
+  margin: auto;
 }/*# sourceMappingURL=style.css.map */
