@@ -4,4 +4,22 @@ h2 {
 
 div {
   color: #999;
+}
+
+.parent {
+  margin: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.parent:hover {
+  color: blue;
+}
+.parent .child2 {
+  background-color: #555;
+}
+.parent .child6 {
+  color: red;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 20px;
 }/*# sourceMappingURL=style.css.map */

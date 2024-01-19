@@ -9,3 +9,25 @@ h2{
 div{
     color: $darkColor;
 }
+
+.parent{
+    margin: 30px;
+    display: flex;
+    justify-content: space-between;
+
+    &:hover{
+        color: blue;
+    }
+    .child2{
+        background-color: #555;
+    }
+    
+    .child6{
+        color: $mainColor;
+        font: {
+            family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            weight:600;
+            size:20px
+        }
+    }
+}
