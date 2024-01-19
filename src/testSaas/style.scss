@@ -41,3 +41,42 @@ div{
         margin: auto;
     }
 }
+
+@mixin list-reset{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+ul{
+    background-color: gray;
+    @include list-reset();
+}
+
+@mixin list-reset($x){
+    margin: $x;
+    padding: $x;
+    list-style: none;
+}
+
+nav{
+    @include list-reset(5)
+}
+
+@mixin trans($prop, $dur){
+    transition: $prop $dur;
+    -webkit-transition: $prop $dur;
+    -moz-transition: $prop $dur;
+    -o-transition: $prop $dur;
+    -ms-transition: $prop $dur;
+}
+
+.text{
+    width: 25px;
+    @include trans(width, 2s )
+}
+
+.test{
+    display: flex;
+    @include trans(all ,0.3s )
+}
