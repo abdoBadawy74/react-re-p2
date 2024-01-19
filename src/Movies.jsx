@@ -23,7 +23,7 @@ export default function Movies() {
   return (
     <div>
       <div className="container">
-        <div className="row">
+        <div className="row justify-content-center align-content-center">
           {/* {trendingMovies.map((movie, i) => (
             <div key={i} className="col-md-3">
               <img
@@ -36,8 +36,14 @@ export default function Movies() {
             </div>
           ))} */}
 
-          {
+          {/* {
             trendingMovies.map((movie,i)=> <Movie key={i} movieInfo={movie}></Movie>)
+          } */}
+
+          {
+            trendingMovies.length > 0 ?
+            trendingMovies.map((movie,i)=> <Movie key={i} movieInfo={movie}></Movie>):
+            <i className="fas fa-spinner fa-spin fa-5x"></i>
           }
         </div>
       </div>
